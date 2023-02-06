@@ -1,8 +1,17 @@
 package com.bridgelabz.utility;
+import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.Arrays;
 
 public class Utility {
+    public Utility(InputStream in) {
+    }
+
+    public Utility() {
+
+    }
+
+
     public static boolean isAnagramsStings(String str1, String str2) {
         if (str1.length() == str2.length()) {
             char a[] = str1.toCharArray();
@@ -87,6 +96,23 @@ public class Utility {
 
 
         return 0;
+    }
+    public static void tempConvert(int choice, int temperature){
+        int convert;
+        switch(choice){
+            case 1:
+                convert =(temperature*9/5)+32;
+                System.out.println("After conversion:"+convert);
+                break;
+
+            case 2:
+                convert = (temperature-32)*5/9;
+                System.out.println("After conversion: " + convert);
+                break;
+
+            default:
+                break;
+        }
     }
 
 
