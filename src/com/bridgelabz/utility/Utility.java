@@ -70,10 +70,24 @@ public class Utility {
 
     }
 
+    public static int inPutInt() {
+        return 0;
+    }
+
+    public static int dayOfWeek(int m, int y) {
+
+
+        return 0;
+
+    }
+
+
 
     public int inputInteger() {
 
 
         return 0;
     }
+
+
 }
